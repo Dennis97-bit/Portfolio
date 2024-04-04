@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: static;
+    background: #5e5d5d;
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+}
+#logo{
+    font-size: 30px;
+    font-family: 'arial';
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: 0 0 15px #3068e0,
+    0 0 25px #3068e0,
+    0 0 50px #3068e0,
+    0 0 100px #3068e0;
+}
+#logo span{
+    color: rgb(115, 250, 102);
+    text-shadow: 0 0 15px #6bfc90,
+                 0 0 25px #6bfc90,
+                 0 0 50px  #6bfc90,
+                 0 0 150px #6bfc90;
+}
+#logo:hover{
+    transform: scale(1.3);
+    transition: 2s;
+}
+nav {
+    font-weight: bolder;
+}
+nav a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 20px;
+    font-family: 'arial';
+    text-transform: uppercase;
+    margin-right: 20px;
+   
+}
+nav a:hover, .active{
+    text-shadow: 0 0 15px #3068e0,
+                 0 0 25px #3068e0,
+                 0 0 50px #3068e0,
+                 0 0 100px #3068e0;
+                 transition:  1s;
+}
+#hamb{
+    display: none;
+}
+#hamb a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+#come{
+    display: none;
+}
+#come ul{
+    background: #050407;
+    margin-left: 20px;
+    text-align: center;
+}
+#come  ul li{
+    border-bottom: 2px solid grey;
+    padding: 25px;
+}
+
+#come ul a{
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-transform: uppercase;
+    list-style:none;
+  
+    text-decoration: none;
+}
+.back{
+    text-align: center;
+}
+#come a:hover, .home{
+    text-shadow: 0 0 15px #3068e0,
+                 0 0 25px #3068e0,
+                 0 0 50px #3068e0,
+                 0 0 100px #3068e0;
+                 transition:  1s;
+}

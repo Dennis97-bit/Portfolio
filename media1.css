@@ -1,0 +1,9 @@
+@import url("index.css");
+@media(max-width:600px){
+    nav a{
+        display: none;
+    }
+    #hamb{
+        display: block;
+    }
+}
