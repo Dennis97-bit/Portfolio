@@ -1,9 +1,60 @@
 @import url("index.css");
 @media(max-width:600px){
+    header{
+        height: 120px;
+        padding: 20px;
+    }
+    #logo{
+        font-size: 20px;
+    }
     nav a{
         display: none;
     }
     #hamb{
         display: block;
+    }
+
+    #come ul{
+        background: #050407;
+        text-align: center;
+    }
+
+    #come  ul li{
+        border-bottom: 2px solid #333;
+        padding: 25px;
+    }
+    
+    #come ul a{
+        font-size: 14pt;
+        font-family:  var(--var-font);
+        /* font-weight: bolder; */
+        color: #ccc;
+        text-transform: uppercase;
+        list-style:none;
+        text-decoration: none;
+    }
+    .back{
+        text-align: center;
+    }
+    #come a:hover, .home{
+        text-shadow: 0 0 15px #3068e0,
+                     0 0 25px #3068e0,
+                     0 0 50px #3068e0,
+                     0 0 100px #3068e0;
+                     transition:  1s;
+    }
+    
+    #come{
+        display: block;
+        top: -100%;
+        position: fixed;
+        width: 100%;
+        height:fit-content;
+    }
+    #come:target{
+        display: block;
+        top: 0px;
+        z-index: 4;
+        transition-duration: 1s;
     }
 }
