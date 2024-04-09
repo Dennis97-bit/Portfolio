@@ -36,7 +36,7 @@
     .back{
         text-align: center;
     }
-    #come a:hover, .home{
+    #come a:hover,a:active{
         text-shadow: 0 0 15px #3068e0,
                      0 0 25px #3068e0,
                      0 0 50px #3068e0,
@@ -56,5 +56,29 @@
         top: 0px;
         z-index: 4;
         transition-duration: 1s;
+    }
+    #About{
+        height: fit-content;
+    }
+    .flex-box{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 3;
+        gap: 20px;
+        padding: 100px;
+        margin: auto;
+        width: fit-content;
+    }
+    .first,.second,.third{
+        width: 200px;
+        height: 60vh;
+        padding: 20px;
+        background: #6bfc90;
+        border-radius: 10px;
+    }
+    .first:hover,.second:hover,.third:hover{
+        transition: 1s;
+        box-shadow: 0 0 50px #3068e0;
+        transform: scale(1.03);
     }
 }

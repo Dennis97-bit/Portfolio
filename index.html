@@ -14,18 +14,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
+     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </head>
 <body>
     <header>
         <div id="logo">
-            DEN<span>NIS</span>
+            <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json"
+    trigger="hover" class="lordicon" colors="primary:white" style="width:30px;height:20px;font-size:300px;">
+            </lord-icon>
+          DEN<span>NIS</span>
         </div>
         <nav id="nav">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">service</a>
-            <a href="#">Contact</a>
+            <a href="#content">Home</a>
+           <a href="#About">About</a>
+           <!-- <a href="#Service">service</a> -->
+            <a href="#Contact">Contact</a>
         </nav>
         <div id="hamb">
             <a href="#come">&#9776</a>
@@ -33,11 +36,11 @@
     </header>
     <div id="come">
         <ul>
-            <a href="" class="back"><li>X</li> </a>
-            <a href="#" class="home"><li>home</li> </a>
-            <a href="#"><li>about</li> </a>
-            <a href="#"><li>service</li> </a>
-            <a href="#"><li>contact</li> </a>
+            <a href="#" class="back"><li>X</li> </a>
+            <a href="#content"><li>home</li> </a>
+            <a href="#About"><li>about</li> </a>
+            <!-- <a href="#Service"><li>service</li> </a> -->
+            <a href="#Contact"><li>contact</li> </a>
         </ul>
     </div>
 
@@ -55,6 +58,30 @@
         <a href="#">Hire me </a>
         <a href="#">Contact</a>
        </div>
+    </div>
+    <!--content for about -->
+    <div id="About" class="about">
+        <h1>About</h1>
+          
+        <div class="flex-box">
+            <div class="first">
+                <p>box</p>
+                 </div>
+                 <div class="second">
+                     <p>box</p>
+                 </div>
+                 <div class="third">
+                     <p>box</p>
+                 </div>
+          </div>
+    </div>
+    <!--content for service-->
+    <!-- <div id="Service" class="service">
+        <h1>service</h1>
+    </div> -->
+    <!--content for contact-->
+    <div id="Contact" class="contact">
+        <h1>contact</h1>
     </div>
 </body>
 </html>

@@ -31,6 +31,7 @@ header{
     top: 0px;
     left:0px;
 }
+
 #logo{
     font-size: 20px;
     font-family: 'arial';
@@ -52,6 +53,9 @@ header{
     /* transform: scale(1.1); */
     /* transition: 2s; */
 }
+#lord{
+    color:white;
+}
 nav {
     /* font-weight: bolder; */
 }
@@ -70,7 +74,7 @@ nav a {
   font-weight: 400;
   font-style: normal;
 }
-nav a:hover, .active{
+nav a:hover, nav a:active{
     text-shadow: 0 0 15px #3068e0,
                  0 0 25px #3068e0,
                  0 0 50px #3068e0,
@@ -91,15 +95,18 @@ nav a:hover, .active{
 
 #content{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 20px;
     background-color: rgba(0,0,0,0.5);
-    margin-top: 150px;
+    margin-top: 0;
 }
 #content{
     color:white;
 }
 
+#content:target{
+    transition: 1s;
+}
 .intro{
    width: fit-content;
    height: fit-content;
@@ -153,3 +160,78 @@ nav a:hover, .active{
     0 0 100px #3068e0;
     transition:  1s ;
 }
+#About{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 5px;
+    color:white;
+}
+
+#About:target{
+    margin-top: 0;
+    transition-duration: 0.1s;
+}
+.flex-box{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 100px;
+    /* margin: auto; */
+    width: fit-content;
+}
+.first,.second,.third{
+    width: 200px;
+    height: 60vh;
+    padding: 20px;
+    background: #6bfc90;
+    border-radius: 10px;
+}
+.first:hover,.second:hover,.third:hover{
+    transition: 1s;
+    box-shadow: 0 0 50px #3068e0;
+    transform: scale(1.03);
+}
+
+#Service{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 15px;
+    color:white;
+}
+
+#Service:target{
+    margin-top: 15px;
+    transition-duration: 0.1s;
+}
+#Contact{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top:5px;
+    color:white;
+}
+
+#Contact:target{
+    margin-top: 3px;
+    transition-duration: 0.1s;
+}
+h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    font-family: calibri; 
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
