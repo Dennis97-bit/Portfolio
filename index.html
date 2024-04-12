@@ -15,52 +15,103 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
      <script src="https://cdn.lordicon.com/lordicon.js"></script>
+     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+     <script type="text/javascript">
+        (function(){
+           emailjs.init("OZCiXHUOUGzg8mSjT");
+        })();
+        </script>
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json"
-    trigger="hover" class="lordicon" colors="primary:white" style="width:30px;height:20px;font-size:300px;">
-            </lord-icon>
-          DEN<span>NIS</span>
-        </div>
-        <nav id="nav">
-            <a href="#content">Home</a>
-           <a href="#About">About</a>
-           <!-- <a href="#Service">service</a> -->
-            <a href="#Contact">Contact</a>
-        </nav>
-        <div id="hamb">
-            <a href="#come">&#9776</a>
-        </div>
-    </header>
+    
     <div id="come">
-        <ul>
+        <!-- <ul>
             <a href="#" class="back"><li>X</li> </a>
             <a href="#content"><li>home</li> </a>
-            <a href="#About"><li>about</li> </a>
-            <!-- <a href="#Service"><li>service</li> </a> -->
+            <a href="#About"><li>about</li> </a> -->
+            <!-- <a href="#Service"><li>service</li> </a> 
             <a href="#Contact"><li>contact</li> </a>
-        </ul>
+        </ul>  -->
+        <div class="link">
+            <a href="#content"><i class="fa fa-home"></i></a>
+        </div>
+
+        <div class="link">
+            <a href="#Contact"><i class="fa fa-envelope-open"></i></a>
+        </div>
     </div>
 
     <!-- Content starts here -->
     <div id="content">
+
+        <header>
+            <div id="logo">
+                <!-- <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json"
+        trigger="hover" class="lordicon" colors="primary:white" style="width:30px;height:20px;font-size:300px;">
+                </lord-icon> -->
+              DEN<span>NIS</span>
+            </div>
+            <nav id="nav">
+                <a href="#content">Home</a>
+               <!-- <a href="#About">About</a> -->
+               <!-- <a href="#Service">service</a> -->
+                <a href="#Contact">Contact</a>
+            </nav>
+            <!-- <div id="hamb">
+                <a href="#come">&#9776</a>
+            </div> -->
+        </header>
         <div class="intro">
             <h1>Welcome to my official website!</h1>
             <P>My Name is <span> DENNIS</span> and I'm a Web Designer.</P>
         </div>
        <div class="icon">
-        <a href="#"> <i class="fa fa-facebook"></i></a>
-        <a href="#"> <i class="fa-brands fa-github"></i></a>
+        <a href="https://web.facebook.com/profile.php?id=61555866053105" target="_blank"> <i class="fa fa-facebook"></i></a>
+        <a href="https://github.com/Dennis97-bit" target="_blank"> <i class="fa-brands fa-github"></i></a>
        </div>
        <div class="btn">
-        <a href="#">Hire me </a>
-        <a href="#">Contact</a>
+        <a href="#" id="hire">Hire me </a>
+        <a href="#Contact">Contact</a>
        </div>
+
+       <div id="Contact" class="contact">
+       
+        <div id="socialhandle">
+            <div class="s-h">
+                Contact me
+            </div>
+            
+            <div class="s-b">
+                Hi you can send me a message via my contact form<br> or through my social media handles listed below:
+                <ul>
+                    <li><i class="fa fa-facebook"></i>&nbsp;&nbsp; @Den Nis</li>
+                    <li><i class="fa fa-whatsapp"></i>&nbsp; +2349068851211</li>
+                    <li><i class="fa fa-phone"></i>&nbsp;&nbsp; +2349068851211</li>
+                    
+
+                </ul>
+            </div>
+
+        </div>
+        <div id="form">
+            <form id="formm">
+                <label >
+                    <input type="text" placeholder="Name*" id="name">
+                </label><br><p>
+                 <label >
+                    <input type="tel" placeholder="Number*" id="number">
+                </label><br><p>
+                <!-- <input type="checkbox">Male
+                 <input type="checkbox">Female<br> -->
+                    <textarea class="Textarea" id="message">
+                    </textarea><br>
+                    <button id="btn">Send</button>
+            </form>
+        </div>
+    </div>
     </div>
     <!--content for about -->
-    <div id="About" class="about">
+    <!-- <div id="About" class="about">
         <h1>About</h1>
           
         <div class="flex-box">
@@ -74,14 +125,14 @@
                      <p>box</p>
                  </div>
           </div>
-    </div>
+    </div> -->
     <!--content for service-->
     <!-- <div id="Service" class="service">
         <h1>service</h1>
     </div> -->
     <!--content for contact-->
-    <div id="Contact" class="contact">
-        <h1>contact</h1>
-    </div>
+    <script src="index.js">
+
+    </script>
 </body>
 </html>

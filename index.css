@@ -5,13 +5,13 @@ body{
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    height: 300vh;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
 }
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 :root{
@@ -30,6 +30,7 @@ header{
     backdrop-filter: blur(3px);
     top: 0px;
     left:0px;
+    background-color: rgba(0,0,0,0.5);
 }
 
 #logo{
@@ -37,17 +38,17 @@ header{
     font-family: 'arial';
     /* font-weight: bolder; */
     color: whitesmoke;
-    text-shadow: 0 0 15px #3068e0,
+    /* text-shadow: 0 0 15px #3068e0,
     0 0 25px #3068e0,
     0 0 50px #3068e0,
-    0 0 100px #3068e0;
+    0 0 100px #3068e0; */
 }
 #logo span{
     color: rgb(115, 250, 102);
-    text-shadow: 0 0 15px #6bfc90,
+    /* text-shadow: 0 0 15px #6bfc90,
                  0 0 25px #6bfc90,
                  0 0 50px  #6bfc90,
-                 0 0 150px #6bfc90;
+                 0 0 150px #6bfc90; */
 }
 #logo:hover{
     /* transform: scale(1.1); */
@@ -95,11 +96,11 @@ nav a:hover, nav a:active{
 
 #content{
     width: 100%;
-    height: 100vh;
-    padding: 20px;
+    height: fit-content;
+    /* padding: 20px; */
     background-color: rgba(0,0,0,0.5);
-    margin-top: 0;
 }
+
 #content{
     color:white;
 }
@@ -113,7 +114,8 @@ nav a:hover, nav a:active{
    margin: auto;
    text-align: center;
    font-family: calibri; 
-   margin-top: 100px;
+   margin-top: 120px;
+   padding: 20px;
 }
 .icon{
     margin: auto;
@@ -160,7 +162,7 @@ nav a:hover, nav a:active{
     0 0 100px #3068e0;
     transition:  1s ;
 }
-#About{
+/* #About{
     width: 100%;
     height: 100vh;
     padding: 20px;
@@ -172,7 +174,7 @@ nav a:hover, nav a:active{
 #About:target{
     margin-top: 0;
     transition-duration: 0.1s;
-}
+} */
 .flex-box{
     display:grid;
     grid-template-columns: auto auto auto;
@@ -207,27 +209,99 @@ nav a:hover, nav a:active{
     margin-top: 15px;
     transition-duration: 0.1s;
 }
+
 #Contact{
+    display:flex;
+    gap:2%;
+    justify-content: center;
+    /* align-items: center; */
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     padding: 20px;
-    background-color: rgba(0,0,0,0.5);
-    margin-top:5px;
+    /* background-color: rgba(0,0,0,0.5); */
+    /* background-color: red; */
+    margin-top:100px;
     color:white;
 }
 
 #Contact:target{
-    margin-top: 3px;
+    margin-top: 100px;
     transition-duration: 0.1s;
 }
-h1{
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
-    text-align: center;
-    font-family: calibri; 
-    margin-top: 30px;
+
+#socialhandle{
+    background: transperent;
+    height: 100%;
+    width: 40%;
+    margin-top: 100px;
+}
+
+.s-h{
+    font-size: 22pt;
+    font-family: var(--var-font);
+    font-weight: bold;
     text-transform: capitalize;
+}
+
+.s-b{
+    font-family: candara;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.s-b ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.s-b li{
+    padding: 5px;
+    font-family: calibri;
+}
+
+
+
+#form{
+    width: 40%;
+    margin-top: 50px;
+    height: 100%;
+}
+
+form{
+    margin: 0 auto;
+    height: fit-content;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    background: rgba(244, 255, 255, 0.2);
+    padding: 30px;
+    border-radius:5px;
+
+    
+}
+form input{
+    background: whitesmoke;
+    width: 80%;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.Textarea{
+    width: 80%;
+    margin-top: 20px;
+    height: 150px;
+}
+#btn{
+    width:150px;
+    border-radius:5px;
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    background-color: #3068e0;
+    color: white;
+    font-weight: bolder;
+
 }
 
 
